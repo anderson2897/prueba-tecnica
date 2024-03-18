@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="product.component.scss">
+<form [formGroup]="serviceForm" class="form-container">
+<div class="container">
+    <div class="form-wrapper">
+      <div class="form-content">
+        <div class="form-header">
+            <h2>Formulario de Entrada</h2>
+          </div>
+        <div class="form-group">
+          <label for="inputField">Campo de Entrada:</label>
+          <input type="text" id="inputField" formControlName="inputField" (input)="validNumInput($event)">
+        </div>
+        <div class="form-group">
+          <label for="selectField">Campo de Selección:</label>
+          <select id="selectField" formControlName="selectField">
+            <option value="">Selecciona una opción</option>
+            <option value="c">Cedula</option>
+            <option value="p">Pasaporte</option>
+          </select>
+        </div>
+        <button (click)="send()">Enviar</button>
+      </div>
+    </div>
+    <div class="response-wrapper">
+      <div class="response-content">
+        <h2>Respuesta:</h2>
+        <div class="form-column">
+          <div>
+            <b for="ciudad_residencia">Ciudad de residencia:</b>
+            <input type="text" id="ciudad_residencia" formControlName="ciudad_residencia">
+          </div>
+          <div>
+            <b for="direccion">Dirección:</b>
+            <input type="text" id="direccion" formControlName="direccion">
+          </div>        
+          <div>
+            <b for="primer_nombre">Primer nombre:</b>
+            <input type="text" id="primer_nombre" formControlName="primer_nombre">
+          </div>
+          <div>
+            <b for="segundo_nombre">Segundo nombre (opcional):</b>
+            <input type="text" id="segundo_nombre" formControlName="segundo_nombre">
+          </div>
+          <div>
+            <b for="primer_apellido">Primer apellido:</b>
+            <input type="text" id="primer_apellido" formControlName="primer_apellido">
+          </div>
+          <div>
+            <b for="segundo_apellido">Segundo apellido (opcional):</b>
+            <input type="text" id="segundo_apellido" formControlName="segundo_apellido">
+          </div>
+          <div>
+            <b for="telefono">Teléfono:</b>
+            <input type="text" id="telefono" formControlName="telefono">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

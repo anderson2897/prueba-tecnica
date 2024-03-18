@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('https://www.shutterstock.com/image-photo/work-home-desk-office-laptop-260nw-1705341190.jpg'); /* Ruta de tu imagen de fondo */
+  background-size: cover;
+  padding: 320px;
+  background-position: center center;
+}
+
+.form-wrapper,
+.response-wrapper {
+  justify-content: center;
+  width: 45%;
+}
+
+.form-header,
+.response-content {
+  text-align: center;
+}
+
+.form-content,
+.response-content {
+  background-color: rgba(255, 255, 255, 0.7); /* Transparencia */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-column .b {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
+}
+
+
+.form-column div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+
+b, input {
+  width: 45%;
+
+}
